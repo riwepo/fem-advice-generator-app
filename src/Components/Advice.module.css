@@ -1,12 +1,20 @@
 .main {
-  width: 50rem;
+  width: 40rem;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background-color: red;
+  background-color: var(--dark-grayish-blue-color);
   border-radius: 0.5rem;
+
+  padding: 2rem 2rem 0rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
 }
 
 .header {
