@@ -41,6 +41,7 @@
   border-radius: 50%;
   border: none;
   transform: translate(0, +50%);
+  cursor: pointer;
 }
 
 .button:hover,
