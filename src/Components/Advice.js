@@ -9,18 +9,14 @@ import classes from "./Advice.module.css";
 function Advice() {
   return (
     <main className={classes.main}>
-      <h1 className={classes.header}>Advice #35</h1>
+      <h1 className={classes.header}>ADVICE #117</h1>
       <p className={classes.advice}>
         "It is easy to sit up and take notice. What is difficult is to get up
         and take action".
       </p>
-      <picture>
+      <picture className={classes.pictureDivider}>
         <source media="(min-width: 768px)" srcSet={patternDividerDesktop} />
-        <img
-          className={classes.imgDivider}
-          src={patternDividerMobile}
-          alt="young man holding laptop"
-        />
+        <img src={patternDividerMobile} alt="young man holding laptop" />
       </picture>
       <button className={classes.button}>
         <img className={classes.imgButton} src={iconDice} alt="dice icon" />
