@@ -7,6 +7,10 @@ import iconDice from "../images/icon-dice.svg";
 import classes from "./Advice.module.css";
 
 function Advice() {
+  const fetchAdvice = () => {
+    console.log("fetchAdvice");
+  };
+
   return (
     <main className={classes.main}>
       <h1 className={classes.header}>ADVICE #117</h1>
@@ -18,7 +22,7 @@ function Advice() {
         <source media="(min-width: 768px)" srcSet={patternDividerDesktop} />
         <img src={patternDividerMobile} alt="young man holding laptop" />
       </picture>
-      <button className={classes.button}>
+      <button className={classes.button} onClick={fetchAdvice}>
         <img className={classes.imgButton} src={iconDice} alt="dice icon" />
       </button>
     </main>
