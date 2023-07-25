@@ -7,8 +7,11 @@ import iconDice from "../images/icon-dice.svg";
 import classes from "./Advice.module.css";
 
 function Advice() {
-  const fetchAdvice = () => {
+  const fetchAdvice = async () => {
     console.log("fetchAdvice");
+    const response = await fetch("https://api.adviceslip.com/advice");
+    const advice = await response.json();
+    console.log(advice);
   };
 
   return (
