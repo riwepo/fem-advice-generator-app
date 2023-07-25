@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import patternDividerMobile from "../images/pattern-divider-mobile.svg";
 import patternDividerDesktop from "../images/pattern-divider-desktop.svg";
@@ -11,10 +11,10 @@ function Advice() {
   const [advice, setAdvice] = useState(null);
   const fetchAdvice = async () => {
     setHeaderText("Fetching advice");
+    setAdvice(null);
     try {
       const response = await fetch("https://api.adviceslip.com/advice");
       if (!response.ok) {
-        console.log(response);
         throw new Error(
           `adviceslip returned error with status:${response.status}`
         );
@@ -26,6 +26,13 @@ function Advice() {
       setHeaderText(err.message);
     }
   };
+
+  useEffect(() => {
+    async function fetchData() {
+      await fetchAdvice();
+    }
+    fetchData();
+  }, []);
 
   return (
     <main className={classes.main}>
