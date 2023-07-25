@@ -11,8 +11,8 @@ function Advice() {
     <main className={classes.main}>
       <h1 className={classes.header}>Advice #35</h1>
       <p className={classes.advice}>
-        It is easy to sit up and take notice. What is difficult is to get up and
-        take action.
+        "It is easy to sit up and take notice. What is difficult is to get up
+        and take action".
       </p>
       <picture>
         <source media="(min-width: 768px)" srcSet={patternDividerDesktop} />
