@@ -27,6 +27,9 @@ function Advice() {
     }
   };
 
+  // here we use useEffect
+  // the empty dependency array causes the function to be called once, when the page loads
+  // we call an async function by defining it inside a sync function and immediately calling it
   useEffect(() => {
     async function fetchData() {
       await fetchAdvice();
