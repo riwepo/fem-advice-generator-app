@@ -1,5 +1,4 @@
 .main {
-  width: 40rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -12,19 +11,27 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+
+  /* mobile */
+  width: 90vw;
 }
 
 .header {
-  font-size: 3rem;
+  font-size: 1rem;
   color: var(--neon-green-color);
+  margin-bottom: 1rem;
 }
 
 .advice {
   color: var(--light-cyan-color);
-  font-size: 2.8rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.pictureDivider {
+  margin-bottom: -1rem;
 }
 
 .button {
@@ -34,4 +41,15 @@
   border-radius: 50%;
   border: none;
   transform: translate(0, +50%);
+}
+
+@media (min-width: 768px) {
+  /* desktop */
+  .main {
+    width: 40rem;
+  }
+
+  .advice {
+    font-size: 2.8rem;
+  }
 }
