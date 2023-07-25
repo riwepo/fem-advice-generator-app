@@ -1,3 +1,29 @@
+.main {
+  width: 50rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: red;
+  border-radius: 0.5rem;
+}
+
 .header {
   font-size: 3rem;
+  color: var(--neon-green-color);
+}
+
+.advice {
+  color: var(--light-cyan-color);
+  font-size: 2.8rem;
+}
+
+.button {
+  display: block;
+  padding: 2rem;
+  background-color: var(--neon-green-color);
+  border-radius: 50%;
+  border: none;
+  transform: translate(0, +50%);
 }
