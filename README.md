@@ -47,9 +47,9 @@ Users should be able to:
 ### What I learned
 
 First challenge using an API.
-Learned how to use uesEffect to call API when page loads.
-Handled busy and error messages.
-First time I used a negative margin. Used after translating button down left a big gap.
+Learned how to use useEffect to call an API when the page loads.
+I handled busy and error messages.
+For the first time I used a negative margin. I used it after translating the button down left a big gap.
 
 ### Continued development
 
